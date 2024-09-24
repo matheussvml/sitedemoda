@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F3F3F3; 
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #c2c800; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-label {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #EEE;
+    cursor: pointer;
+    border: 1px solid #CCC;
+    border-radius: 3px 3px 0 0;
+    margin-right: 5px;
+    color: #555;
+}
+
+input[name="tabs"] {
+    display: none;
+}
+
+input#tab1:checked ~ label[for="tab1"],
+input#tab2:checked ~ label[for="tab2"] {
+    background-color: #c2c800;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #CCC;
+    background-color: #FFF;
+    border-top: none;
+}
+
+input#tab1:checked ~ #original,
+input#tab2:checked ~ #translation {
+    display: block;
+}
